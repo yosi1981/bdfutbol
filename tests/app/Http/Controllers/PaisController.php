@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Pais;
 
 class PaisController extends Controller
 {
@@ -14,9 +13,7 @@ class PaisController extends Controller
      */
     public function index()
     {
-        $paises=Pais::get();
-
-        return $paises;
+        //
     }
 
     /**
@@ -73,8 +70,6 @@ class PaisController extends Controller
      */
     public function destroy($id)
     {
-        $pais=Pais::findorfail($id);
-        $pais->delete();
-        return;
+        //
     }
 }
